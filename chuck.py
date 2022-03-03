@@ -1,12 +1,8 @@
-import requests, json
+import requests
 
 url = requests.get("https://api.chucknorris.io/jokes/random")
-text = url.json()
+joke = url.json()
 
-print(type(text))
-
-
-
-print(text['value'])
+print(joke['value'])
 
 # Gut Schlecht? in Datei schreiben
